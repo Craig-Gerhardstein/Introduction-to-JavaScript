@@ -1,5 +1,7 @@
 /*🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️ Task 1: Warm-up! 🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️*/
 
+import { template } from "@babel/core";
+
 /*MAKE SURE TO RETURN ALL OF THE ANSWERS ON THESE TASKS, IF YOU DON'T, THE AUTOGRADER WILL NOT WORK*/
 
 /*
@@ -17,6 +19,11 @@ Do the following:
 
    HINT: no function required
 */
+let votingAge = 18;
+if (votingAge > 17) {
+ console.log('You can vote');
+}
+
 
 
 
@@ -30,7 +37,11 @@ Do the following:
 
    HINT: no function required
 */
+let numb1=2
+let numb2=3
 
+if (numb1 < numb2) numb1= numb1 + numb2;
+console.log(numb1);
 
 
 
@@ -45,8 +56,9 @@ Do the following:
 
    HINT: look up the Number method
 */
-
-
+let stringToInt ='1999'
+Number(stringToInt);
+console.log(stringToInt);
 
 
 /*
