@@ -20,9 +20,11 @@ Do the following:
    HINT: no function required
 */
 let votingAge = 18;
-if (votingAge > 17) {
- console.log('You can vote');
-}
+console.log(votingAge >=18);
+ 
+
+
+
 
 
 
@@ -58,7 +60,7 @@ Do the following:
 */
 let stringToInt ='1999'
 Number(stringToInt);
-console.log(stringToInt);
+console.log(stringToInt);0
 
 
 /*
@@ -68,11 +70,17 @@ Do the following:
    1. Invoke the multiply function below and pass it two numbers
    2. Receive the numbers in the parameters: a and b
    3. Multiply a and b and return the answer
+
 */
 
-function multiply(/*add your code here*/){
-    /*add your code here*/
+
+
+
+function multiply(a, b){
+  return a * b;
+    
   }
+  console.log(3, 4);
 
 
 
@@ -86,8 +94,8 @@ Do the following:
    3. Return the newly calculated age
 */
 
-function dogYears(/*add your code here*/){
-    /*add your code here*/
+function dogYears(age) {
+    return age * 7;
 }
 
 
@@ -145,10 +153,54 @@ Use the game function below to do the following:
   
   HINT: Remember that the order in which we pass in our arguments matters when it comes to parameters
 */
+let computer = function(){
+    let randomNumber = Math.floor(Math.random()*3);
+    if (randomNumber === 0){
+      return 'rock';
+      
+    }else if ( randomNumber === 1){
+      return 'paper';
+    }
+    else {
+      return 'scissors';
+    }
+
+}
+
 
 function game(user, computer){
-    /*add your code here*/
-}
+  if (user === computer){
+    return "it's a tie";
+  }
+   if ( user === 'rock') {
+     if (computer === 'paper'){
+       return 'you lose!';
+     }else {
+       return 'you win!';
+     }
+     
+   }
+   if (user === 'paper'){
+     if (computer === 'scissors'){
+       return 'you lose!';
+      
+     }else {
+       return 'you win!';
+     }
+   }
+   if (user === 'scissors'){
+     if (computer === 'rock'){
+       return "you lose!";
+      
+     }else{
+       return 'you win!';
+     }
+   }
+
+   }
+
+
+
   
   
 
