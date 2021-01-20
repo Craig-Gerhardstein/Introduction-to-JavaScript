@@ -272,8 +272,11 @@ Using the annoyingSong function below do the following:
       "{number} bottles of soda on the wall, {number} bottles of soda, take one down pass it around {number left over} bottles of soda on the wall"
 */
 
-function annoyingSong(/*add your code here*/){
-        /*add your code here*/
+function annoyingSong(number){
+        for(let x = number; x > 0; number--){
+          return x + ' bottles of soda on the wall, ' + x + ' bottles of soda, take one down pass it around ' +[ x-1] + ' bottles of soda on the wall'
+        }
+        
   }
 
 
@@ -291,7 +294,7 @@ Using the grade function below do the following:
    60-69 should return 'you got a D'
    below should return 'you got an F'
 */
-  
+
 function grade(score){
   if (score >= 90){
     return 'you got an A';
