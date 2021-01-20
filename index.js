@@ -239,9 +239,9 @@ Using the miles function below do the following:
   2. Convert the number of kiolmeters received to miles
   3. Return the number of miles
 */
-let km = 1;
+let km = 5;
 function miles(km){
-    (miles = km / 1.609);
+    (miles = km * 0.621371);
     return(miles);
   }
 
