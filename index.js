@@ -239,9 +239,10 @@ Using the miles function below do the following:
   2. Convert the number of kiolmeters received to miles
   3. Return the number of miles
 */
-
-function miles(/*add your code here*/){
-    /*add your code here*/
+let km = 1;
+function miles(km){
+    (miles = km / 1.609);
+    return(miles);
   }
 
 
@@ -253,9 +254,10 @@ Using the feet function below do the following:
   2. Convert the number of cm to feet
   3. Return number of feet
 */
-
-function feet(/*add your code here*/){
-    /*add your code here*/
+let cm = 1000;
+function feet(cm){
+    (feet = cm / 30.48)
+    return(feet);
   }
  
 
